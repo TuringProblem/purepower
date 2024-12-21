@@ -1,0 +1,24 @@
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PurePower Athletics</title>
+    <script src="https://unpkg.com/htmx.org@1.9.10"></script>
+    <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+<body class="bg-black">
+    <div id="landing-container" class="flex items-center justify-center min-h-screen">
+        <div id="logo-container" 
+             class="cursor-pointer transform transition-transform duration-300 hover:scale-110"
+             hx-get="/main-content"
+             hx-trigger="click"
+             hx-target="#main-content"
+             hx-swap="innerHTML">
+            <img src="/static/images/logo.svg" alt="PurePower Athletics" class="w-64">
+        </div>
+    </div>
+    <div id="main-content"></div>
+</body>
+</html>

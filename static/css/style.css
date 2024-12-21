@@ -1,0 +1,20 @@
+/* static/css/styles.css */
+@keyframes fadeInLogo {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+#logo-container {
+    animation: fadeInLogo 1s ease-out forwards;
+}
+
+.logo-clicked {
+    transform: translateY(-100vh);
+    transition: transform 0.8s ease-out;
+}
